@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imggender"
+        android:layout_width="134dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aa" />
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:text="Name"
+        app:layout_constraintStart_toEndOf="@+id/imggender"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtage"
+        android:layout_width="126dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imggender"
+        app:layout_constraintTop_toBottomOf="@+id/txtname" />
+
+    <TextView
+        android:id="@+id/txtaddress"
+        android:layout_width="124dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imggender"
+        app:layout_constraintTop_toBottomOf="@+id/txtage" />
+
+    <ImageButton
+        android:id="@+id/imgdustbin"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ddd" />
+
+    <TextView
+        android:id="@+id/txtgender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="84dp"
+        android:text="Gender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/txtaddress"
+        app:layout_constraintTop_toBottomOf="@+id/imgdustbin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
